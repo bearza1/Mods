@@ -11,7 +11,7 @@ namespace BTD6_Infinite_Monkey_Knowledge
     {
         public static string dir = $"{Directory.GetCurrentDirectory()}\\Mods\\InfiniteMonkeyKnowledge";
         public static string config = $"{dir}\\config.txt";
-        public static int amount = 999999999;
+        public static int amount = 90;
         public override void OnApplicationStart()
         {
             MelonLogger.Msg("Infinite Monkey Knowledge loaded!");
@@ -34,7 +34,7 @@ namespace BTD6_Infinite_Monkey_Knowledge
                 MelonLogger.Msg("Creating config file");
                 using (StreamWriter sw = File.CreateText(config))
                 {
-                    sw.WriteLine("Amount=999999999");
+                    sw.WriteLine("Amount=90");
                 }
                 MelonLogger.Msg("Done Creating");
             }
